@@ -71,7 +71,7 @@ public class Movie implements Serializable {
     }
 
     public String getBackdropPath() {
-        return backdropPath;
+        return String.format("https://image.tmdb.org/t/p/w342%s",backdropPath);
     }
 
     public void setBackdropPath(String backdropPath) {
