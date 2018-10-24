@@ -1,6 +1,8 @@
 package com.example.viktor.moviemanager.models;
 
-public class Movie {
+import java.io.Serializable;
+
+public class Movie implements Serializable {
 
     String id;
     String title;
