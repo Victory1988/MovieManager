@@ -50,7 +50,7 @@ public class NowPlayingFragment extends Fragment {
         rvMovies.setHasFixedSize(true);
         rvMovies.setLayoutManager(llm);
 
-        MovieRecyclerViewAdapter adapter = new MovieRecyclerViewAdapter(this.getContext(), movies);
+        MovieRecyclerViewAdapter adapter = new MovieRecyclerViewAdapter(getContext(), movies);
         rvMovies.setAdapter(adapter);
 
         return view;
@@ -73,4 +73,5 @@ public class NowPlayingFragment extends Fragment {
         super.onDestroyView();
         unbinder.unbind();
     }
+
 }
